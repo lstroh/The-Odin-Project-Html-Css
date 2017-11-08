@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EMBEDDING IMAGES AND VIDEO</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style >
+	*{
+		box-sizing: border-box;
+	}
+	header{
+		height: 50px;
+		border-bottom: 4px solid lightcyan;
+	}
+	.right_div{
+		width: 70%;
+		/*border: 5px solid red;*/
+		float: right;
+		height: 500px;
+		padding-right: 150px;
+		padding-left: 10px;
+	}
+
+	.left_div{
+		width: 30%;
+		/*border: 5px solid blue;*/
+		float: left;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.row{
+		
+		height: 500px;
+		/*background-color: green;
+		border: 1px solid black;*/
+	}
+	.reorder_class{
+		/*display: inline;*/
+		position: absolute;
+		right: 10px;
+		top :20px;
+		height: 50px;
+	}
+	.youtube_img{
+		width: 100px;
+		margin: 10px;
+		position: absolute;
+		right:35px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.search_form{
+		display: inline;
+		position: absolute;
+		right: 200px;
+		top:20px;
+	}
+	#search_btn {
+		background-color: white;
+		border: 1px solid lightgray;
+		position: relative;
+		bottom: 3px;
+	}
+	#search_txt{
+		height: 30px;
+		width: 500px;
+		position: relative;
+		bottom: 10px;
+	}
+	#google_right_icons{
+		position: relative;
+		top: 8px;
+	}
+	#video_info{
+		text-align: right;
+		font-size: 20px;
+		border-bottom: 1px solid dimgrey; 
+	}
+	.comments{
+		padding-top:10px;
+		text-align: right;
+		margin:5px;
+	}
+	.art_comments{
+		padding: 25px;
+		margin:5px;
+	}
+	.video_img{
+		float: right;
+	}
+	.first_video{
+		border-bottom: 1px solid black;
+		height: 100px;
+	}
+	.videos::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	}
+	#iframe_video {
+		height: 100%;
+		width: 100%;
+	}
+</style>
+</head>
+<body>
+	<header>
+		כניסה
+		<i id="google_right_icons" class="material-icons">more_vert</i>
+		<i id="google_right_icons" class="material-icons">apps</i>
+		<i id="google_right_icons" class="material-icons">file_upload</i>
+		<form class="search_form">
+			<button id="search_btn"><i class="material-icons">search</i></button>
+			<input id="search_txt" type="search" name="search1">
+		</form>
+		<img class="youtube_img" src="yt_logo_rgb_light.png" alt="YouTubeLogo">
+		<div class="reorder_class">
+			<i class="material-icons">reorder</i>
+		</div>
+	</header>
+	<div class="row">
+		<div class="right_div">
+			<iframe id="iframe_video" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allowfullscreen></iframe><br>
+			<div id="video_info">
+				<strong>Contributing to Open Source Part I: The Easy Way</strong>
+			</div>
+			<div class="comments">
+				<strong>The Odin Project</strong><br>
+				<article class="art_comments">
+				How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open</article>
+			</div>
+		</div>
+		<div class="left_div">
+			<div class="first_video">
+				<img class="video_img" src="video1.PNG">
+				<article id="video_art"><strong class="strong_art">Contributing to Open Source Paret II: The Real Way</strong><br><br> The Odin Project </article>
+			</div>
+			<div class="videos">
+				<img class="video_img" src="video2.PNG">
+				<article id="video_art"><strong class="strong_art">Your First GitHub Pull Request in 10 Mins</strong><br><br> Jackson Bates </article>
+			</div>
+			<br>
+			<div class="videos">
+				<img class="video_img" src="video3.PNG">
+				<article id="video_art"><strong class="strong_art">How to Get Started with GitHub-Beginner Tutorial</strong><br><br> MicrowaveSam </article>
+			</div>		
+		</div>
+	<div>	
+</body>
+
+</html>
