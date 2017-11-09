@@ -91,6 +91,12 @@
 	.first_video{
 		border-bottom: 1px solid black;
 		height: 100px;
+		overflow: hidden;
+	}
+	.first_video::after {
+	    content: "";
+	    clear: both;
+	    display: table;
 	}
 	.videos::after {
 	    content: "";
@@ -100,6 +106,15 @@
 	#iframe_video {
 		height: 100%;
 		width: 100%;
+	}
+	.video_img_div{
+		float: right;
+		width: 70%;
+	}
+	.video_info_div{
+		float: left;
+		width: 30%;
+		overflow: hidden;
 	}
 </style>
 </head>
@@ -132,17 +147,29 @@
 		</div>
 		<div class="left_div">
 			<div class="first_video">
-				<img class="video_img" src="video1.PNG">
-				<article id="video_art"><strong class="strong_art">Contributing to Open Source Paret II: The Real Way</strong><br><br> The Odin Project </article>
+				<div class="video_info_div">
+					<article id="video_art"><strong class="strong_art">Contributing to Open Source Paret II: The Real Way</strong><br><br> The Odin Project </article>
+				</div>
+				<div class="video_img_div">
+					<img class="video_img" src="video1.PNG">
+				</div>
 			</div>
 			<div class="videos">
-				<img class="video_img" src="video2.PNG">
-				<article id="video_art"><strong class="strong_art">Your First GitHub Pull Request in 10 Mins</strong><br><br> Jackson Bates </article>
+				<div class="video_info_div">
+					<article id="video_art"><strong class="strong_art">Your First GitHub Pull Request in 10 Mins</strong><br><br> Jackson Bates </article>
+				</div>
+				<div class="video_img_div">
+					<img class="video_img" src="video2.PNG">
+				</div>	
 			</div>
 			<br>
 			<div class="videos">
-				<img class="video_img" src="video3.PNG">
-				<article id="video_art"><strong class="strong_art">How to Get Started with GitHub-Beginner Tutorial</strong><br><br> MicrowaveSam </article>
+				<div class="video_info_div">
+					<article id="video_art"><strong class="strong_art">How to Get Started with GitHub-Beginner Tutorial</strong><br><br> MicrowaveSam </article>
+				</div>
+				<div class="video_img_div">	
+					<img class="video_img" src="video3.PNG">
+				</div>
 			</div>		
 		</div>
 	<div>	
