@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Intuit Accounts - Sign Up</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style >
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		background-color: AliceBlue ;
+	}
+	#signupbtn{
+		background-color: #4d4dff;
+		color: white;
+		 float:right;
+		 margin: 15px;
+		 width: 125px;
+		 text-align: center;
+		 border: 1px solid black;
+		 padding-bottom: 5px;
+		 border-radius: 5px;
+	}
+	#signuptxt{
+		float: right;
+		margin: 15px;
+	}
+	#main{
+		float: center;
+		text-align: center;
+		
+	}
+	#headid::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	}
+	#fromdiv{
+		background-color: white;
+		color: #262626;
+		border: 1px solid black;
+		width: 400px;
+		margin:auto;
+		padding-left: 15px;
+		padding-bottom: 5px;
+	}
+	.navbtn{
+		background-color: white;
+		border:none;
+		padding: 10px;
+		margin: 10px;
+		text-align: center;
+	}
+	.btntxt{
+		display: inline;
+		position: relative;
+		bottom: 8px;
+		padding: 2px;
+		color: lightgray;
+	}
+	.material-icons{
+		color: lightgray;
+	}
+	#topfromnav{
+		border-bottom: 1px solid lightgray;
+	}
+	#formtxttop{
+		font-size: 25px;
+		font-weight: bold;
+	}
+	#fromtxt2{
+		font-size: 15px;
+		font-weight: lighter;
+	}
+	.formtxt4{
+		font-size: 10px;
+		text-align: left;
+		padding-top: 5px;
+	}
+	.formtxt3{
+		text-align: left;
+	}
+	#fromid{
+		text-align: left;
+	}
+	.forminputtxt{
+		text-align: left;
+		position: relative;
+		right: 10px;
+		width: 380px;
+	}
+	#createbtn{
+		background: #4d4dff;
+		color: white;
+		border:none;
+		position: relative;
+		right: 10px;
+		width: 380px;
+	}
+	#lock_img{
+		font-size: 20px;
+	}
+	#createbtntext{
+		position: relative;
+		display: inline;
+		bottom: 4px;
+	}
+	#frombottomtext{
+		width: 300px;
+		color: #b3b3b3;
+		margin:auto;
+		padding-top:15px;
+	}
+	a{
+		text-decoration: none;
+		color: #4d4dff;
+	}
+	footer{
+		text-align: center;
+	}
+	footer li{
+		display: inline;
+	}
+	footer ul{
+		position: relative;
+		right:15px;
+	}
+</style>	
+</head>
+
+<body>
+<header id="headid">
+	<div id="signupdiv">
+		<button id="signupbtn" style="font-size:14px"><i class="material-icons">lock_outline</i>                       Sign In</button>
+		<div id="signuptxt">
+			Alreay have an Intuit account?<br><a href="#">I forgot my User Id or Password</a>
+		</div>	
+
+	</div>
+	<br>
+	
+</header>
+<div id="main">
+		<h1 >INTUIT</h1>
+		<div id="fromdiv">
+			<div id="topfromnav">
+				<button class ="navbtn"><i class="material-icons">check_circle</i><aside class="btntxt">turbotax</aside></button>
+				<button class ="navbtn"><i class="material-icons">bug_report</i><aside class="btntxt">quickbooks</aside></button>
+				<button class ="navbtn" ><i class="material-icons">favorite</i><aside class="btntxt">mint</aside></button>
+			</div>
+			<article id="formtxttop">One Account.<br>Everything Intuit.</article><br>
+			<article id="fromtxt2">Create an account for all of Intuit's products<br>including Mint. <a href="#">Learn more</a></article><br>
+			<from id="formid">
+				<aside class="formtxt3">Email address</aside><br>
+				<input class = "forminputtxt" type="text" name="email"><br><br>
+				<aside class="formtxt3">Phone (recommended)</aside><br>
+				<input class = "forminputtxt" type="text" name="Phone">
+				<aside class="formtxt4">Standard call, messaging or data rates may apply.</aside><br><br>
+				<aside class="formtxt3">Password</aside><br>
+				<input class = "forminputtxt" type="password" name="email"><br><br>
+				<button id="createbtn"><i id="lock_img"  class="material-icons">lock_outline</i><section id="createbtntext">Create Account</section></button>
+			</from>
+			<div id="frombottomtext">
+			By clicking Create Account you agree to our <a href="#">License Agreemetn</a>and <a href="#">Privacy Statement</a>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<br>
+		INTUIT
+		<ul>
+			<li><a href="#">Legal</a></li>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">Security</a></li>
+		</ul>
+		&#169;Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.<br>
+		Terms and conditions, features, support, pricing, and service options subject to change without notice.<br>
+	</footer>
+</body>
+
+</html>
