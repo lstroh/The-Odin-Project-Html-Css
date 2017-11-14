@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bottom_sec{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main_img{
+    background-image: url("http://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg");
+    background-repeat: no-repeat;
+    background-position: -90px -780px;
+    width: 1239px;
+    height: 530px;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.main_img a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+.main_img a i{
+    position: relative;
+    bottom: -5px;
+}
+.main_img h1{
+    font-size: 4em;
+    font-weight: normal;
+    position: relative;
+    top: 20%;
+}
+.main_img pre{
+    font-size: 2em;
+    position: relative;
+    top:7%;
+    right:5%;
+}
+div [id|="bottom_img_link"]{
+    width: 24%;
+    height: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.img_link{
+    width: 100%;
+}
