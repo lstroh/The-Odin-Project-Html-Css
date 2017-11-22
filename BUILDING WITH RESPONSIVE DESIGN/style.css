@@ -13,7 +13,7 @@ body{
     margin-bottom: 20px;
 }
 .main_art_class{
-    height: 255px;
+    height: 30%;
     border-top: 12px solid lightgray;
     border-left: 11px solid lightgray;
     border-right: 11px solid lightgray;
@@ -41,29 +41,45 @@ body{
     margin-bottom: 20px;
     margin-top: 20px;
     height: 28px;
-    background-color: blue;
+    color:orange;
+}
+#sub_art_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sub_art_ul li{
+    /* height: 19%; */
+    height: 107px;
 }
 .sub_art_class {
     position: relative;
     margin-top: 25px;
     height: 107px;
-    background-color: green;
+    /* text-align: center; */
 }
-.sub_art_class img{
-    height: 107px;
-    max-width: 25%;
-    min-width: 50px;
+
+.sub_art_class a{ 
+    text-decoration: none;
+    color:black;
 }
-.sub_art_class a{
-    padding-bottom: 53.5px;
-    padding-top: 53.5px;
-    padding-left: 80.5px;
-    padding-right: 80.5px;
+ .img_a{
+    text-decoration: none;
+    color: black;
+    float: left;
 }
-.sub_art_class h4,h5{
-    position: absolute;
-    left:170px;
-    display: block;
+.sub_art_class h4,h6 {
+    position: relative;
+}
+.sub_art_class a img{
+    margin-top:17.5px;
+    height: 72px;
+    width: 72px;
+    display:inline-block;
+}
+.sub_art_class span{
+    position: relative;
+    top:25%;
 }
 .back_img_set{
     background-repeat: no-repeat;
@@ -87,4 +103,40 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+}
+@media screen and (min-width: 768px) {
+    #back_img_1{
+        width: 64%;
+        height: 286px;
+        float: left;
+        border-bottom: 12px solid lightgray;
+    }
+    #back_img_2{
+        width: 33%;
+        height: 143px;
+        float:left;
+        border-left: none;
+    }
+    #back_img_3{
+        width: 33%;
+        height: 143px;
+        float:left;
+        border-left: none;
+        border-bottom: 12px solid lightgray;
+        
+    }
+    .sub_art_class{
+        width: 30%;
+        float: left;
+        margin-left: 2%;
+    }
+    .sub_art_class a img{
+        height: 100%;
+        width: 100%;
+        display:inline-block;
+    }
+    #sub_art_ul li{
+        margin-left : 2%;
+
+    }
 }
